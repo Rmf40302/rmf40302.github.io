@@ -5,56 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <style>
-    body {
-    margin: 0;
-    background-color: rgb(255, 255, 255);
+    body{
+        background-color: rgb(226, 226, 226);
     }
-    #main {
-        margin: 0px auto;
-        width: 1440px;
-        padding: 54px 52px;
-        background-color: rgb(255, 255, 255);
-    }
-
-    .banner{
-        height:380px;
-        width: 1440px;
-        background-color:rgb(200, 200, 200);
-    }
-    #container1.flex{
-        padding: 54px 52px;
-        width: 1440px;
-        height: 2000px;
-        background-color: antiquewhite;
-
-    }
-
-
-    /*utility class*/
-.container1{
+#main {
+    margin: 20px auto;
+    width: 1440px;
+    padding: 54px 54px;
+}
+#main > div{
+    min-height: 600px;
+}
+/* utility class*/
+.row{
     display: flex;
-
+}
+.banner{
+    height: 380px;
+    text-align: center;
+    background-color: brown;
+}
+#main div.col1 {
+    width: 50%;
+    padding: 46px;
+}
+.col2 {
+    width: 50%;
+    padding: 46px;
 }
 
 </style>
 </head>
 <body>
-    <div id="main">
-        <div class="banner flex">
-            <h1>VISIT CENTRAL PA<h1>
-         </div>
-
-        <div class="container1.flex">
-            <div class="col1a">
-                <img src="https://placehold.co/620x478" alt="placehold">
-                <h1>Central York Market</h1>
-            </div>
-            <div class="col2a">
-                <img src="https://placehold.co/620x478" alt="placehold">
-                <h1>Raystown Lake</h1>
-                <p>The oldest continuously operating farmers' market in the U.S., offering a bustling atmosphere, local produce, crafts, and diverse food vendors.</p>
-            </div>
-  
-    
+    <div class="banner">
+        <H1>VISIT CENTRAL PA</H1>
+    </div>
+ <div id="main">
+    <div class="row">
+        <div class="col1">
+            <img src="https://placehold.co/620x478" alt="placehold">
+            <h1>Hershey Park</h1>
+        </div>
+        <div class="col2">
+            <img src="https://placehold.co/620x478" alt="placehold">
+            <h1>Raystown Lake</h1>
+            <p>typeplace</p>
+        </div> 
+    </div>
+    <div class="row">
+        <div class="col1">
+            <img src="https://placehold.co/620x478" alt="placehold">
+            <h1>nameofplace</h1>
+            <p>typeplace</p>
+        </div>
+        <div class="col2">
+            <img src="https://placehold.co/620x478" alt="placehold">
+            <h1>nameofplace</h1>
+            <p>typeplace</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col1">
+            <img src="https://placehold.co/620x478" alt="placehold">
+            <h1>nameofplace</h1>
+            <p>typeplace</p>
+        </div>
+        <div class="col2">
+            <img src="https://placehold.co/620x478" alt="placehold">
+            <h1>nameofplace</h1>
+            <p>typeplace</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col1">
+            <img src="https://placehold.co/620x478" alt="placehold">
+            <h1>nameofplace</h1>
+            <p>typeplace</p>
+        </div>
+        <div class="col2">
+            <img src="https://placehold.co/620x478" alt="placehold">
+            <h1>nameofplace</h1>
+            <p>typeplace</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col1">
+            <img src="https://placehold.co/620x478" alt="placehold">
+            <h1>nameofplace</h1>
+            <p>typeplace</p>
+        </div>
+        <div class="col2">
+            <img src="https://placehold.co/620x478" alt="placehold">
+            <h1>nameofplace</h1>
+            <p>typeplace</p>
+        </div>
+    </div>
+    </div>
+ </div>
 </body>
 </html>
