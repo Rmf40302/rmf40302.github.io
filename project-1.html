@@ -44,32 +44,32 @@ h2{
 }
 
 .footer{
+    display: flex;
     height: 148px;
+    align-items: center;
+    justify-content: center;
     background-color: #335f22;
 }
 img {
     border-radius: 38px;
-    height: 100%
-    calc(50%-92px);
+    height: calc(50%-92px);
 }
 
 h1,p,a{
     font-family: "Inter", sans-serif;
+    font-style: normal;
 }
 h1{
     font-weight: 700;
-    font-style: normal;
     color: #931e1e;
     font-size: 36px;
 }
 p{
     font-weight: 400;
-    font-style: normal;
     font-size: 24px;
 }
 a{
     font-weight: 700;
-    font-style: normal;
     color: #3577b5;
     font-size: 18px;
 }
@@ -83,6 +83,7 @@ a{
 <body>
     <div class="banner1">
         <h2>VISIT CENTRAL PA</h2>
+        <p>Plan your visit today!</p>
     </div>
  <div id="main">
     <div class="row">
@@ -91,14 +92,14 @@ a{
             <h1>Hersheypark</h1>
             <p>A renowned amusement park featuring exciting rides, live entertainment, and an opportunity to learn about 
                 chocolate-making at Hershey's Chocolate World.</p>
-            <a href="http://www.hersheypark.com/" target="blank">Visit Website</a>
+            <a href="http://www.hersheypark.com/" target="_blank">Visit Website</a>
         </div>
         <div class="col">
             <img src="images/railroad.jpg" alt="train">
             <h1>Railroad Museum of Pennsylvania</h1>
             <p>Located in Strasburg, this museum boasts an extensive collection of vintage locomotives, rail cars, and exhibits, showcasing the rich history 
                 of railroading.</p>
-                <a href="http://www.rrmuseumpa.org/" target="blank">Visit Website</a>
+            <a href="http://www.rrmuseumpa.org/" target="_blank">Visit Website</a>
         </div> 
     </div>
     <div class="row">
@@ -106,27 +107,27 @@ a{
             <img src="images/capitol.jpg" alt="inside building">
             <h1>Pennsylvania State Capitol</h1>
             <p>An impressive architectural gem in Harrisburg showcasing exquisite artwork, stunning interiors, and guided tours to learn about the state's government and history.</p>
-            <a href="http://www.pacapitol.com/" target="blank">Visit Website</a>
+            <a href="http://www.pacapitol.com/" target="_blank">Visit Website</a>
         </div>
         <div class="col">
-            <img src="images/lewisburg-size.jpg" alt="Lewisburg" >
+            <img src="images/lewisburg-size.jpg" alt="Lewisburg">
             <h1>Lewisburg</h1>
             <p>A charming small town known for its historic downtown, offering boutique shops, galleries, and restaurants, as well as attractions like the Lewisburg Farmers Market and Packwood House Museum.</p>
-            <a href="http://www.lewisburgpa.com/" target="blank">Visit Website</a>
+            <a href="http://www.lewisburgpa.com/" target="_blank">Visit Website</a>
         </div>
     </div>
     <div class="row">
         <div class="col">
-            <img src="images/market.jpg" alt="market building" >
+            <img src="images/market.jpg" alt="market building">
             <h1>Central Market York</h1>
             <p>The oldest continuously operating farmers' market in the U.S., offering a bustling atmosphere, local produce, crafts, and diverse food vendors.</p>
-            <a href="http://www.centralmarketyork.com/" target="blank">Visit Website</a>
+            <a href="http://www.centralmarketyork.com/" target="_blank">Visit Website</a>
         </div>
         <div class="col">
-            <img src="images/raystown.jpg" alt="raystown lake" >
+            <img src="images/raystown.jpg" alt="raystown lake">
             <h1>Raystown Lake</h1>
             <p>A scenic reservoir near Huntingdon, offering boating, fishing, hiking, and camping amid picturesque landscapes and water activities.</p>
-            <a href="https://raystown.org/" target="blank">Visit Website</a>
+            <a href="https://raystown.org/" target="_blank">Visit Website</a>
         </div>
     </div>
     <div class="row">
@@ -134,31 +135,33 @@ a{
             <img src="images/gettysburg.jpg" alt="statue">
             <h1>Gettysburg National Military Park</h1>
             <p>Site of the pivotal Battle of Gettysburg during the Civil War, offering guided tours, historic monuments, and a visitor center with exhibits.</p>
-            <a href="http://www.nps.gov/gett" target="blank">Visit Website</a>
+            <a href="http://www.nps.gov/gett" target="_blank">Visit Website</a>
         </div>
         <div class="col">
-            <img src="images/pine-grove.jpg" alt="statue">
+            <img src="images/pine-grove.jpg" alt="lake with trees">
             <h1>Pine Grove Furnace State Park</h1>
             <p>Serving as the "Gateway to the Appalachian Trail," this park offers hiking, picnicking, and swimming opportunities, along with historic features and natural beauty.</p>
-            <a href="http://www.dcnr.pa.gov/StateParks/FindAPark/PineGroveFurnaceStatePark" target="blank">Visit Website</a>
+            <a href="http://www.dcnr.pa.gov/StateParks/FindAPark/PineGroveFurnaceStatePark" target="_blank">Visit Website</a>
         </div>
     </div>
     <div class="row">
         <div class="col">
-            <img src="images/worlds-end.jpg" alt="world-ends" >
+            <img src="images/worlds-end.jpg" alt="world-ends">
             <h1>World Ends State Park</h1>
             <p>Situated in the Endless Mountains, this park is known for its rugged beauty, with hiking trails, waterfalls, and breathtaking views of the Loyalsock Creek Gorge.</p>
-            <a href=http://www.dcnr.pa.gov/StateParks/FindAPark/WorldsEndStatePark target="blank">Visit Website</a>
+            <a href="http://www.dcnr.pa.gov/StateParks/FindAPark/WorldsEndStatePark" target="_blank">Visit Website</a>
         </div>
         <div class="col">
-            <img src="images/canyon.jpg" alt="world-ends">
+            <img src="images/canyon.jpg" alt="big mountains">
             <h1>The Pennsylvania Grand Canyon</h1>
             <p>Serving as the "Gateway to the Appalachian Trail," this park offers hiking, picnicking, and swimming opportunities, along with historic features and natural beauty.</p>
-            <a href=http://www.dcnr.pa.gov/StateParks/FindAPark/ColtonPointStatePark target="blank">Visit Website</a>
+            <a href="http://www.dcnr.pa.gov/StateParks/FindAPark/ColtonPointStatePark" target="_blank">Visit Website</a>
         </div>
     </div>
     </div>
-    <div class="footer"></div>
+    <div class="footer">
+        <p>&copy; 2024 Visit PA. All rights reserved.</p>
+    </div>
  </div>
 </body>
 </html>
