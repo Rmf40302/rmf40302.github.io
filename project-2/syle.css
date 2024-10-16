@@ -1,0 +1,18 @@
+body{ margin: 0;
+    background-color: #fefaec;
+
+}
+#main{
+    background-color: #fefaec;
+    margin: 0%;
+    width: 1440px
+
+}
+.col {
+    justify-content: center;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
