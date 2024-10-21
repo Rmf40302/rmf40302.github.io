@@ -22,17 +22,6 @@ img{
     max-height: auto;
     margin-bottom: 30px;
 }
-.logo {
-    height: 70px; 
-    width: auto;
-}
-.logo-navbar {
-    position: fixed; /* Keep the logo fixed */
-    bottom: -20px; /* Adjust distance from the bottom */
-    left: 550px; /* Adjust distance from the left */
-    z-index: 10;
-}
-
 h1{
 
     font-family: "Lexend", sans-serif;
@@ -51,23 +40,37 @@ p{
     color: #363636;
     margin-bottom: 200px;
 }
+.navbar-container{
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 20px; /* Adjust padding as needed */
+    z-index: 10;
+}
+.logo {
+    height: 60px; 
+    width: auto;
+}
+.logo-navbar {
+   margin-right: 20px;
+}
+
     .navbar {
         display: flex;
         justify-content: center;
-        align-items: center;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        padding: 5px 0;
+    
       }
       
       .navbar a {
         display: block;
+        margin: 0 15px;
+        padding: 10px 20px;
         background-color: #9eb67c;
         color: #FEFBEC;
         text-align: center;
-        padding: 10px 20px;
-        margin: 0 20px;
         text-decoration: none;
         font-size: 40px;
       }
@@ -82,5 +85,41 @@ p{
         background: #FF8C53;
         color: #FEFBEC;
       }
+      .burger{
+        display: none;
+      }
+      .burger div{
+        width: 25px;
+        height: 5px;
+        background-color: #9eb67c;
+        margin: 3px;
+
+      }
+
+      .navbar a {
+        display: block; 
+    }
+    
+
+    @media screen and (max-width: 768px) {
+        .navbar a {
+            display: none; 
+        }
+    
+        .burger {
+            display: flex; 
+            flex-direction: column;
+            cursor: pointer;
+        }
+        
+        .burger div {
+            width: 25px;
+            height: 5px;
+            background-color: #9eb67c;
+            margin: 3px;
+        }
+    }
+        
+
 
       
