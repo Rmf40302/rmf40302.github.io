@@ -112,13 +112,18 @@ p{
             cursor: pointer;
         }
         
-        .burger div {
-            width: 25px;
-            height: 5px;
-            background-color: #9eb67c;
-            margin: 3px;
+        .burger.active + .navbar a {
+            display: block;}
+         h1 {
+                font-size: 32px;
+            }
+        
+        p {
+                font-size: 24px;
+            }
         }
-    }
+
+    
         
 
 
