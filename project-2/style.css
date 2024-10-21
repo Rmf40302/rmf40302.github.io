@@ -1,12 +1,18 @@
-body{ margin: 0 auto;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
     background-color: #fefaec;
 
 }
 #main{
     margin: 0 auto;
     background-color: #fefaec;
-    width: 100%;
-    padding: 20px;
+    max-width: 1440px;
+    padding: 10px; 
 
 }
 
@@ -14,4 +20,67 @@ img{
     margin: 0 auto;
     max-width: 100%;
     max-height: auto;
+    margin-bottom: 30px;
 }
+.logo {
+    height: 70px; 
+    width: auto;
+}
+.logo-navbar {
+    position: fixed; /* Keep the logo fixed */
+    bottom: -20px; /* Adjust distance from the bottom */
+    left: 550px; /* Adjust distance from the left */
+    z-index: 10;
+}
+
+h1{
+
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 700;
+    color: #3270AD;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+p{
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-size: 36px;
+    font-weight: 400;
+    color: #363636;
+    margin-bottom: 200px;
+}
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 5px 0;
+      }
+      
+      .navbar a {
+        display: block;
+        background-color: #9eb67c;
+        color: #FEFBEC;
+        text-align: center;
+        padding: 10px 20px;
+        margin: 0 20px;
+        text-decoration: none;
+        font-size: 40px;
+      }
+      
+      .navbar a.active {
+        background: #FF8C53;
+        color:#FEFBEC;
+      }
+
+      
+      .navbar a:hover {
+        background: #FF8C53;
+        color: #FEFBEC;
+      }
+
+      
