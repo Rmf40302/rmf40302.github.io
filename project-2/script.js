@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const burger = document.querySelector('.burger');
-    const navbar = document.querySelector('.navbar');
+    const burger = document.getElementsById('burger');
+    const navbar = document.getElementById('navbar');
 
     burger.addEventListener('click', () => {
         navbar.classList.toggle('active'); 
