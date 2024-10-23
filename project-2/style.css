@@ -121,8 +121,15 @@ p{
             cursor: pointer;
         }
         
-        .burger.active + .navbar a {
-            display: block;}
+        .burger.active + .navbar {
+            display: flex; 
+            flex-direction: column;
+            position: absolute; 
+            bottom: 60px; 
+            left: 0;
+            right: 0;
+            background-color: #fefaec; 
+        }
          h1 {
                 font-size: 32px;
             }
