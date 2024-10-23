@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+    background-color: #fefaec;
+
+}
+#main{
+    margin: 0 auto;
+    background-color: #fefaec;
+    max-width: 1440px;
+    padding: 10px; 
+
+}
+
+img{
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: auto;
+    margin-bottom: 30px;
+}
+.banner1{
+    margin: 0 auto;
+    margin-bottom: -30px;
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 700;
+    color: #3270AD;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+p{
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-size: 36px;
+    font-weight: 400;
+    color: #363636;
+    margin-bottom: 200px;
+}
+.navbar-container{
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 20px; /* Adjust padding as needed */
+    z-index: 10;
+}
+.logo {
+    height: 60px; 
+    width: auto;
+}
+.logo-navbar {
+   margin-right: 20px;
+}
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+    
+      }
+      
+      .navbar a {
+        display: block;
+        margin: 0 15px;
+        padding: 10px 20px;
+        background-color: #9eb67c;
+        color: #FEFBEC;
+        text-align: center;
+        text-decoration: none;
+        font-size: 40px;
+      }
+      
+      .navbar a.active {
+        background: #FF8C53;
+        color:#FEFBEC;
+      }
+
+      
+      .navbar a:hover {
+        background: #FF8C53;
+        color: #FEFBEC;
+      }
+      .burger{
+        display: none;
+      }
+      .burger div{
+        width: 25px;
+        height: 5px;
+        background-color: #9eb67c;
+        margin: 3px;
+
+      }
+
+      .navbar a {
+        display: block; 
+    }
+    
+
+    @media screen and (max-width: 768px) {
+        .navbar a {
+            display:none; 
+        }
+    
+        .burger {
+            display: flex; 
+            flex-direction: column;
+            cursor: pointer;
+        }
+        
+        .burger.active + .navbar {
+            display: flex; 
+            flex-direction: column;
+            position: absolute; 
+            bottom: 60px; 
+            left: 0;
+            right: 0;
+            background-color: #fefaec; 
+        }
+         h1 {
+                font-size: 32px;
+            }
+        
+        p {
+                font-size: 24px;
+            }
+        }
+
+    
+        
+
+
+      
