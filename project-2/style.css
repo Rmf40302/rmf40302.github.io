@@ -102,33 +102,31 @@ p{
         height: 5px;
         background-color: #9eb67c;
         margin: 3px;
-
       }
-
       .navbar a {
         display: block; 
     }
-    
+
 
     @media screen and (max-width: 768px) {
-        .navbar a {
-            display:none; 
+
+        .navbar{display: none;
+
         }
-    
         .burger {
             display: flex; 
             flex-direction: column;
             cursor: pointer;
         }
         
-        .burger.active + .navbar {
-            display: flex; 
+        .navbar.active {
+            display: block; 
             flex-direction: column;
             position: absolute; 
-            bottom: 60px; 
+            bottom: 100px; 
             left: 0;
             right: 0;
-            background-color: #fefaec; 
+            background-color: #fefaec;
         }
          h1 {
                 font-size: 32px;
@@ -137,7 +135,8 @@ p{
         p {
                 font-size: 24px;
             }
-        }
+    }
+
 
     
         

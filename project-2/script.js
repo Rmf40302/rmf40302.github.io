@@ -1,8 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const burger = document.getElementsById('burger');
-    const navbar = document.getElementById('navbar');
+  const burger = document.getElementById('burger');
+  const navbar = document.querySelector('.navbar');
 
-    burger.addEventListener('click', () => {
-        navbar.classList.toggle('active'); 
-    });
+  burger.addEventListener('click',() => {
+    navbar.classList.toggle('active');
+  });
 });
+
+
