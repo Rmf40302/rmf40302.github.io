@@ -9,6 +9,15 @@
     <link rel="icon" type="image/jpg" href="../photos/favicon.jpg">
     <link rel="apple-touch-icon" href="../photos/favicon.jpg">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
 
@@ -26,7 +35,7 @@
 
       <ul class="nav-menu">
         <li class="nav-item"> 
-          <a href="index.html" class="nav-link">Home</a>
+          <a href="index.html" class="nav-link" >Home</a>
         </li>
         <li class="nav-item"> 
           <a href="../book/index.html" class="nav-link">About The Book</a>
@@ -49,17 +58,36 @@
     </nav>
   </header>
 
-<div class="cover">
-  <img src="../photos/Cover.jpg" alt="book cover"
-  width="908.1px"
-  height="1198px">
-  <h2>A Lewis Carroll’s  Mind Bending Peculiar MASTERPIECE</h2>
-</div>
+  <div class="cover">
+    <img src="../photos/Cover.jpg" alt="book cover" class="cover-image">
+    <div class="cover-text">
+      <h2>A Lewis Carroll’s Mind-Bending <span class="masterpiece">MASTERPIECE</span></h2>
+      <p>"Alice in Wonderland" remains a significant work in the realm of children's literature. Its nonsensical nature has intrigued readers for generations...</p>
+      <a href="../book/index.html">
+      <button class="button button2">Read More</button>
+    </a>
+    </div>
+  </div>
 
 <div class="author">
   <img src="../photos/author_cropped.jpg" alt="author">
-  <p>Read About The</p>
+  <a href="../bio/index.html">
+  <button class="button button1">Read About The Author</button>
+</a>
 </div>
+
+<div class="book-reviews-container">
+  <div class="book-reviews">
+  <h2> Recent Book Reviews</h2>
+  <h3>A Captivating Journey into Wonderland By Sharon Mill</h3>
+  <p>While "Alice in Wonderland" may appear to be a children's book on the surface, it holds a deeper meaning that transcends age. 
+    Carroll's satirical commentary on Victorian society and its rigid conventions is subtly woven into the narrative, offering readers 
+    a thought-provoking and allegorical reading experience. </p>
+    <a href="../reviews/index.html">
+      <button class="button">Read Recent Book Reviews</button>
+    </a>
+</div>
+
 
 <script src="../script.js"></script>
 </body>
