@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+    .body{
+    margin: 0;
+}
+
+.banner1{
+    display: flex;
+    justify-content: space-evenly;
+    height: 70px;
+    align-items: center;
+    color: #ba3b3b;
+    margin-top: 25px;
+}
+.logo{
+  height:100px;
+  width:auto;
+}
+header{
+  background-color: #74B9D2;
+}
+li{
+  list-style: none;
+}
+a{
+  color: #282828;
+  text-decoration: none;
+}
+.col {
+    flex: 1; 
+    padding: 46px;
+    box-sizing: border-box;
+}
+.navbar{
+  min-height: 74px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  width: 100%;
+}
+.nav-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 300px;
+}
+.nav-link{
+  transition: 0.3s ease;
+}
+
+.nav-link:hover{
+  color:#ba3b3b;
+}
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #ba3b3b;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 100px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #74B9D2; 
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-menu.active {
+    left: 0; 
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-link {
+    padding: 15px 20px;
+    font-size: 18px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+  }
+
+  .nav-link:hover {
+    color: #ba3b3b; 
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+  
+</style>
+</head>
+<body>
+
+  <div class="banner1">
+  <div class="logo">
+    <a href="index.html"><img src="../photos/logo.png" alt="logo" class="logo"> </a>
+  </div>
+  <h2>Alice's Adventure In Wonderland</h2>
+  <div class="logo">
+    <a href="index.html"><img src="../photos/logo.png" alt="logo" class="logo"> </a>
+  </div>
+</div>
+<header>
+    <nav class="navbar">
+
+      <ul class="nav-menu">
+        <li class="nav-item"> 
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item"> 
+          <a href="../book/index.html" class="nav-link">About The Book</a>
+        </li>
+        <li class="nav-item"> 
+          <a href="../bio/index.html" class="nav-link">Author Bio</a>
+        </li>
+        <li class="nav-item"> 
+        <a href="../reviews/index.html" class="nav-link">Book Reviews</a>
+        </li>
+        <li class="nav-item"> 
+          <a href="../purchase/index.html" class="nav-link">Purchase</a>
+          </li>
+      </ul>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    </nav>
+  </header>
+
+<div class="cover">
+  <img src="../photos/Cover.jpg" alt="book cover"
+  width="908.1px"
+  height="1198px">
+  <h2>A Lewis Carroll’s  Mind Bending Peculiar MASTERPIECE</h2>
+</div>
+
+<div class="author">
+  <img src="../photos/author_cropped.jpg" alt="author">
+  <p>Read About The</p>
+</div>
+
+<script src="../script.js"></script>
+</body>
+</html>
