@@ -89,7 +89,7 @@ a.nav-link{
   margin: 0 auto;                 
 }
 
-.img{ 
+.cover-image { 
   width: 709px;         
   height: auto;
   object-fit: cover;                                  
@@ -220,7 +220,8 @@ a.nav-link{
   flex-direction: column;
   align-items: center;      
   justify-content: center;     
-  margin: 20px;              
+  margin: 0 auto;
+  max-width: 900px;        
 }
 
 .about-book-image {
@@ -231,11 +232,9 @@ a.nav-link{
 }
 
 .about-the-book-container p {
-  font-size: 60px; 
   font-weight: 700;
   color: #333;
-  line-height: 1.6; 
-  max-width: 800px;                  
+  line-height: 1.6;                  
 }
 
 .about-the-book-container h1 {
@@ -323,13 +322,19 @@ a.nav-link{
 }
 
 .book-review-column {
+  justify-content: center;
+  align-items: center;
   width: 30%; 
   margin-bottom: 20px;
-  padding: 10px;
   text-align: left; 
+  margin: 0 auto;
 }
-
-
+.book-review-column h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 20px;
+}
 .book-review-column h3 span {
   color: #FFD700; 
 }
@@ -341,41 +346,47 @@ a.nav-link{
   text-align: center;
 }
 .purchase {
-  display: flex; 
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-h1{
-  text-align: center;
-  font-family:'IM Fell Great Primer SC', serif; ;
-  font-size: 30px;
-  font-weight: 400;
-  color: #ba3b3b;
-  margin-bottom: 20px;
+  display: flex;
+  gap: 20px; 
+  justify-content: center;
+  align-items: center; 
+  margin: 0 auto;
 }
 
 .purchase .cover-image {
-  margin-left: 100px;
-  width: 500px;
-  height: auto;
-}
-.purchase {
-  display: flex;
-  flex-wrap: wrap; /* Allow wrapping */
-  align-items: center;
-  justify-content: space-between;
-}
-.purchase .purchase-text {
-  margin-right: 100px;
-  font-family: "Inter", sans-serif;
-  font-style: bold;
-  text-align: left;
-  max-width: 800px;
+  width: 100%; 
+  max-width: 500px; 
+  height: auto; 
 }
 
+.purchase .purchase-text {
+  max-width: 700px; 
+  width: 100%; 
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #39393A;
+}
+
+.purchase .button {
+  margin-top: 20px;
+}
+
+h1{
+  font-family:'IM Fell Great Primer SC', serif; ;
+  font-size: 40px;
+  font-weight: 400;
+  color: #ba3b3b;        
+  text-align: center;
+}
 
 @media (max-width: 768px) {
+
+  .navbar {
+    padding: 10px 20px;
+    font-size: 18px;
+    justify-content: space-between;
+  }
+
   .nav-menu {
     position: fixed;
     left: -100%;
@@ -385,6 +396,8 @@ h1{
     width: 100%;
     text-align: center;
     transition: 0.3s;
+    background-color: rgb(172, 170, 167);  
+    z-index: 9999;  
   }
 
   .nav-menu.active {
@@ -403,11 +416,13 @@ h1{
   }
 
   .nav-link:hover {
-    color: #ba3b3b; 
+    color: #ba3b3b;
   }
 
   .hamburger {
     display: block;
+    cursor: pointer;
+    z-index: 10000; 
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -422,4 +437,124 @@ h1{
     transform: translateY(-8px) rotate(-45deg);
   }
 
+  /* Cover Image and Text */
+  .cover {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    text-align: center;
+  }
+
+  .cover-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .cover-text {
+    padding-left: 0;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .cover-text h1 {
+    font-size: 36px; 
+  }
+
+  .cover-text p {
+    font-size: 18px; 
+  }
+
+  .button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  
+  .author img {
+    width: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .book-reviews {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .book-reviews h2, .book-reviews h3 {
+    font-size: 24px; /* Adjust for smaller screen */
+  }
+
+  .book-reviews .button {
+    margin-top: 30px;
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+
+  .about-the-book-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .about-book-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .about-the-book-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 90%;
+    margin: 10px auto;
+  }
+
+  .about-the-book-container h1 {
+    font-size: 24px;
+  }
+
+  .about-the-author h1 {
+    font-size: 28px;
+  }
+
+  .author-image {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .biography {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col p {
+    font-size: 16px;
+    line-height: 1.6;
+    width: 90%;
+  }
+
+  .book-review-column {
+    width: 100%;  
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  .purchase {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .purchase .cover-image {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .purchase .purchase-text {
+    margin-right: 0;
+    max-width: 90%;
+  }
 }
