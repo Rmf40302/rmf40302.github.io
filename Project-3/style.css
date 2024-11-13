@@ -11,9 +11,9 @@
     margin: 0;
 }
 
-.banner1{
+title{
   font-family:'IM Fell Great Primer SC', serif; ;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 400;
     display: flex;
     justify-content: space-evenly;
@@ -22,9 +22,6 @@
     color: #ba3b3b;
     margin-top: 25px;
     text-align: center;
-}
-header{
-  background-color: #74B9D2;
 }
 li{
   list-style: none;
@@ -87,11 +84,13 @@ a.nav-link{
   display: flex;                    
   align-items: center;                
   justify-content: space-between; 
-  padding: 20px;                          
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;                 
 }
 
-.cover-image {
-  width:800px;               
+.img{ 
+  width: 709px;         
   height: auto;
   object-fit: cover;                                  
 }
@@ -99,21 +98,20 @@ a.nav-link{
 .cover-text {
   font-family: "Inter", sans-serif;
   font-size: 20px;
-  font-weight: 700;
-  max-width: 50%;                   
-  text-align: left;                  
+  font-weight: 700;                 
+  text-align: left;                 
   padding-left: 20px;                
 }
 
-.cover-text h2 {
+.cover-text h1 {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-size: 50px;  
   font-weight: 700;
   color: #3B6DB8;                         
   font-weight: bold;
-  margin-bottom: 15px;   
-  text-align: center;             
+  margin-bottom: 15px;
+  text-align: left;         
 }
 
 .cover-text p {                 
@@ -183,7 +181,7 @@ a.nav-link{
   justify-content: center; 
   align-items: center;      
   height: 100%;       
-  text-align: center;      
+  text-align: left;      
 }
 
 .book-reviews {
@@ -362,7 +360,12 @@ h1{
   width: 500px;
   height: auto;
 }
-
+.purchase {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping */
+  align-items: center;
+  justify-content: space-between;
+}
 .purchase .purchase-text {
   margin-right: 100px;
   font-family: "Inter", sans-serif;
@@ -370,7 +373,6 @@ h1{
   text-align: left;
   max-width: 800px;
 }
-
 
 
 @media (max-width: 768px) {
