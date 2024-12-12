@@ -10,7 +10,6 @@ body {
 
 p {
   color: #362A1A;
-  font-family: Arial, sans;
   font-size: 25px;
 }
 
@@ -78,12 +77,12 @@ p {
 }
 
 #myCarousel {
-  width: 50%; /* Custom width */
+  width: 35%; /* Custom width */
   margin: 0 auto;
 }
 
 #myCarousel .carousel-inner .item img {
-  width: 100%; /* Full width of the carousel */
+  width: 35%; /* Full width of the carousel */
   height: auto; /* Automatic height to maintain aspect ratio */
   object-fit: cover; /* Ensure image covers the entire space */
 }
