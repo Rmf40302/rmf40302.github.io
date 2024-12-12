@@ -257,6 +257,10 @@ p {
   font-size: 20px;
   text-align: left;
 }
+.about img {
+  max-width: 100%;
+  height: auto; /* Ensure it's responsive on small screens */
+}
 
 .menu-container {
   justify-self: center;
